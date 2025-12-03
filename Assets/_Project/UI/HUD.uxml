@@ -1,0 +1,70 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <!-- Root Container -->
+    <ui:VisualElement name="HUDRoot" style="flex-grow: 1; justify-content: space-between;">
+        
+        <!-- Top Bar -->
+        <ui:VisualElement name="TopBar" class="hud-panel" style="flex-direction: row; justify-content: space-between; padding: 10px; background-color: rgba(0, 0, 0, 0.6);">
+            
+            <!-- Player Stats -->
+            <ui:VisualElement name="PlayerStats" style="flex-direction: column;">
+                <ui:Label text="ELARION" name="GameTitle" class="title-label" style="font-size: 20px; color: rgb(100, 255, 150); -unity-font-style: bold; margin-bottom: 5px;"/>
+                <ui:Label text="Health: 100" name="HealthLabel" class="stat-label"/>
+                <ui:Label text="Position: (0, 0, 0)" name="PositionLabel" class="stat-label"/>
+            </ui:VisualElement>
+            
+            <!-- Aura Info -->
+            <ui:VisualElement name="AuraInfo" style="flex-direction: column; align-items: flex-end;">
+                <ui:Label text="Aura Purity: 50%" name="PurityLabel" class="aura-label" style="color: rgb(150, 255, 150);"/>
+                <ui:Label text="Energy: 30%" name="EnergyLabel" class="aura-label" style="color: rgb(100, 200, 255);"/>
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+        
+        <!-- Center Crosshair -->
+        <ui:VisualElement name="CrosshairContainer" style="position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; margin-left: -10px; margin-top: -10px;">
+            <ui:VisualElement name="CrosshairVertical" style="position: absolute; left: 9px; top: 0; width: 2px; height: 20px; background-color: rgba(255, 255, 255, 0.8);"/>
+            <ui:VisualElement name="CrosshairHorizontal" style="position: absolute; left: 0; top: 9px; width: 20px; height: 2px; background-color: rgba(255, 255, 255, 0.8);"/>
+        </ui:VisualElement>
+        
+        <!-- Bottom Bar -->
+        <ui:VisualElement name="BottomBar" class="hud-panel" style="flex-direction: row; justify-content: space-between; padding: 10px; background-color: rgba(0, 0, 0, 0.6);">
+            
+            <!-- Hotbar -->
+            <ui:VisualElement name="Hotbar" style="flex-direction: row; flex-grow: 1; max-width: 500px;">
+                <ui:VisualElement name="HotbarSlot0" class="hotbar-slot hotbar-slot-selected">
+                    <ui:Label text="1" class="hotbar-number"/>
+                    <ui:Label text="Grass" name="BlockName0" class="hotbar-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="HotbarSlot1" class="hotbar-slot">
+                    <ui:Label text="2" class="hotbar-number"/>
+                    <ui:Label text="Dirt" name="BlockName1" class="hotbar-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="HotbarSlot2" class="hotbar-slot">
+                    <ui:Label text="3" class="hotbar-number"/>
+                    <ui:Label text="Stone" name="BlockName2" class="hotbar-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="HotbarSlot3" class="hotbar-slot">
+                    <ui:Label text="4" class="hotbar-number"/>
+                    <ui:Label text="Wood" name="BlockName3" class="hotbar-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="HotbarSlot4" class="hotbar-slot">
+                    <ui:Label text="5" class="hotbar-number"/>
+                    <ui:Label text="Leaves" name="BlockName4" class="hotbar-label"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- Info Panel -->
+            <ui:VisualElement name="InfoPanel" style="flex-direction: column; align-items: flex-end;">
+                <ui:Label text="FPS: 60" name="FPSLabel" class="info-label"/>
+                <ui:Label text="Chunks: 0" name="ChunksLabel" class="info-label"/>
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+        
+        <!-- Notification Area (top-right) -->
+        <ui:VisualElement name="NotificationArea" style="position: absolute; right: 10px; top: 100px; width: 300px; flex-direction: column;">
+            <!-- Notifications dinamiche verranno aggiunte qui via C# -->
+        </ui:VisualElement>
+        
+    </ui:VisualElement>
+</ui:UXML>

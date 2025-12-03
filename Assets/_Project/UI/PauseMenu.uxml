@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="PauseMenuPanel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+        
+        <ui:VisualElement name="MenuContainer" style="width: 400px; background-color: rgba(20, 20, 20, 0.95); padding: 30px; border-width: 2px; border-color: rgb(100, 255, 150); border-radius: 10px;">
+            
+            <ui:Label text="PAUSED" style="font-size: 40px; color: rgb(100, 255, 150); -unity-font-style: bold; -unity-text-align: middle-center; margin-bottom: 30px;"/>
+            
+            <ui:Button text="Resume" name="ResumeButton" class="menu-button" style="margin-bottom: 10px;"/>
+            <ui:Button text="Options" name="OptionsButton" class="menu-button" style="margin-bottom: 10px;"/>
+            <ui:Button text="Quit to Desktop" name="QuitButton" class="menu-button menu-button-danger"/>
+            
+        </ui:VisualElement>
+        
+    </ui:VisualElement>
+</ui:UXML>

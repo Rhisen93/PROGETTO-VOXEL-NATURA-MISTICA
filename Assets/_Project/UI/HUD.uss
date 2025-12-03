@@ -1,0 +1,89 @@
+/* Root Styles */
+#HUDRoot {
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#LegacyRuntime');
+}
+
+/* Panel Base */
+.hud-panel {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-width: 1px;
+    border-color: rgba(100, 255, 150, 0.3);
+}
+
+/* Labels */
+.stat-label {
+    color: rgb(200, 200, 200);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.aura-label {
+    font-size: 14px;
+    margin-bottom: 2px;
+    -unity-font-style: bold;
+}
+
+.info-label {
+    color: rgb(180, 180, 180);
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+/* Hotbar Slots */
+.hotbar-slot {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(40, 40, 40, 0.8);
+    border-width: 2px;
+    border-color: rgba(100, 100, 100, 0.6);
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hotbar-slot-selected {
+    border-color: rgb(100, 255, 150);
+    border-width: 3px;
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+.hotbar-number {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+}
+
+.hotbar-label {
+    color: rgb(220, 220, 220);
+    font-size: 12px;
+    -unity-text-align: middle-center;
+}
+
+/* Notification Styles */
+.notification {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-width: 1px;
+    border-color: rgba(100, 255, 150, 0.5);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.notification-text {
+    color: rgb(220, 220, 220);
+    font-size: 14px;
+    white-space: normal;
+}
+
+.notification-fade {
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+/* Crosshair */
+#CrosshairContainer {
+    /* pointer-events: none; */ /* Proprietà non supportata in Unity UI Toolkit */
+}
